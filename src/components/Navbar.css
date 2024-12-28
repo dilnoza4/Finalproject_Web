@@ -1,0 +1,147 @@
+.navbar {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.nav-left {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 0;
+    position: relative;
+}
+
+/* Regular nav links underline effect */
+.nav-left a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.nav-left a:hover:after {
+    width: 100%;
+}
+
+.navbar-links a:hover {
+    color: #007bff;
+}
+
+/* Login button style */
+.login-btn {
+    background-color: #007bff;
+    color: white !important;
+    padding: 8px 20px !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid #007bff;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Register button style */
+.register-btn {
+    background-color: transparent;
+    color: #007bff !important;
+    padding: 8px 20px !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: 1px solid #007bff;
+}
+
+.register-btn:hover {
+    background-color: #f8f9fa;
+    color: #0056b3 !important;
+    border-color: #0056b3;
+}
+
+/* Logout button style */
+.logout-btn {
+    background: none;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    background: #dc3545;
+    color: white;
+}
+
+/* Remove underline effect from buttons */
+.login-btn:after,
+.register-btn:after {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-links {
+        margin-left: 20px;
+    }
+
+    .nav-left {
+        gap: 15px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .login-btn,
+    .register-btn,
+    .logout-btn {
+        padding: 6px 12px !important;
+    }
+} 

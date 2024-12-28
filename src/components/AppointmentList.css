@@ -1,0 +1,37 @@
+.appointment-form {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.appointment-form h1 {
+    color: #004085;
+}
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.time-slot {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f8f9fa;
+    color: #004085;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.time-slot.booked {
+    background: #d4edda;
+    color: #155724;
+    cursor: not-allowed;
+}
+
+.time-slot:hover:not(.booked) {
+    background: #004085;
+    color: #fff;
+}

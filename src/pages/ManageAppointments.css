@@ -1,0 +1,15 @@
+.manage-appointments {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.manage-appointments h1 {
+    color: #004085;
+    margin-bottom: 1rem;
+}
+
+.manage-appointments p {
+    color: #495057;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
